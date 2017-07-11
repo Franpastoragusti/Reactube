@@ -19,12 +19,12 @@ const VideoDetail = ({video}) =>{
                 </iframe>
             </div>
             <div className="detail">
-                <div>
+                <h2>
                     {video.snippet.title}
-                </div>
-                <div>
+                </h2>
+                <p>
                     {video.snippet.description}
-                </div>
+                </p>
             </div>
         </div>
     )

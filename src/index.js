@@ -42,17 +42,27 @@ class App extends Component {
     render(){
         const videoSearch = _.debounce((term) => {
             this.videoSearch(term)
-        },300)
+        },900)
 
         return (
+            
             <div>
-                <SearchBar onSearchTermChange={term => this.videoSearch(term)}/>
-                <VideoDetail video={this.state.selectedVideo}/>
-                <VideoList
-                    onVideoSelect={selectedVideo => this.setState({selectedVideo})}
-                    videos={this.state.videos}/>
+                <header>
+                    <h1 className="title">REACTUBE</h1>
+                </header>
+                <section>
+                    <SearchBar onSearchTermChange={term => this.videoSearch(term)}/>
+                </section>
+                <section>
+                    <VideoDetail video={this.state.selectedVideo}/>
+                </section>
+                <article>
+                    <VideoList
+                        onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+                        videos={this.state.videos}/>
+                </article>
             </div>
-        );
+        )
     };
 
 

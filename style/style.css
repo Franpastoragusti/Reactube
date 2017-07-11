@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
 .search-bar{
     margin: 20px;
     text-align: center
@@ -24,4 +26,12 @@
 
 .list-group-item:hover{
     background-color: #eee;
+    
+}
+
+h1.title{
+    font-size: 40px;
+    font-family: 'Audiowide';
+    text-align: center;
+    color: red;
 }
