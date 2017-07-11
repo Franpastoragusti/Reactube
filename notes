@@ -1,0 +1,29 @@
+Functional Component -----> Only returns a function
+
+ const SearchBar = () => {
+ return <input />
+ }
+
+
+Class Component -----> Add more "skills"
+
+    class SearchBar extends Component{
+
+        render() {
+            return <input/>;
+        }
+    }
+
+
+
+Controlled Component ----> His value is the state
+
+        <input
+          value={this.state.term}
+          onChange={(event) => this.setState({ term: event.target.value}) }/>
+
+If a state value is passed as his name on ES6 dont do de asiggment
+            this.state{videos : ''}
+
+           V this.setState({ videos })
+           X this.setState({ videos: videos })
