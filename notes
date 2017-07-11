@@ -27,3 +27,9 @@ If a state value is passed as his name on ES6 dont do de asiggment
 
            V this.setState({ videos })
            X this.setState({ videos: videos })
+
+
+Limit the function to be called 
+const videoSearch = _.debounce((term) => {
+            this.videoSearch(term)
+        },300)
