@@ -1,9 +1,7 @@
 /**
  * Created by fran on 9/7/17.
  */
-/**
- * Created by fran on 9/7/17.
- */
+
 import React, { Component } from 'react';
 
 const VideoListItem = ({video, onVideoSelect}) => {
